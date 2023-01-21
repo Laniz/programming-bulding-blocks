@@ -10,7 +10,7 @@ drinks = input('How many drinks are there? ')
 sales_tax_rate = input('What is the sales tax? ')
 tip = input('what is the tip percentage? ')
 
-#subtotal = childmeal price x number of children plus adult meal price times number of adults
+#subtotal = childmeal price x number of children plus adult meal price x number of adults
 child_adult_total = float(child_meal) * int(number_of_children) + float(adult_meal) * int(number_of_adults)
 drinks_grand_total = 1.99 * int(drinks)
 subtotal = drinks_grand_total + child_adult_total
@@ -23,7 +23,7 @@ sales_tax = (float(sales_tax_rate) * subtotal) / 100
 total = subtotal + sales_tax
 
 #tip that will be printed for the customer.
-tip_in_money = subtotal * (int(tip) / 100)
+tip_in_money = subtotal * (float(tip) / 100)
 #grand total for everything!!
 grand_total = tip_in_money + total 
 
