@@ -23,7 +23,7 @@ sales_tax = (float(sales_tax_rate) * subtotal) / 100
 total = subtotal + sales_tax
 
 #tip that will be printed for the customer.
-tip_in_money = total * (int(tip) / 100)
+tip_in_money = subtotal * (int(tip) / 100)
 #grand total for everything!!
 grand_total = tip_in_money + total 
 
