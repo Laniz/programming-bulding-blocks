@@ -1,10 +1,10 @@
-first_num = 5
-second_num = 3
+first_num = 7
+second_num = 2
 
-results = second_num ** first_num
-print(results)
-#divide and drop remainder
-result = first_num // second_num
+# results = second_num ** first_num
+# print(results)
+# #divide and drop remainder
+# result = first_num // second_num
 
 #divide and give me the remainder
 result = first_num % second_num
@@ -12,8 +12,8 @@ print(result)
 
 #fortmat to specific decimal point
 
-result = first_num / second_num
-print(f'{result:.5}')
+# result = first_num / second_num
+# print(f'{result:.5}')
 
 
 #convert number into a string first if adding together int and str
