@@ -8,4 +8,4 @@
 
 #SEARCH - You feel around in the dark, there is flashlight right next you. Do you TURN ON the flash light or search for MORE?
 
-#
+#Crawl - Luckly you find a door. Some how the door speaks. Says "Silver is the only passage, you know the ancient password". "What password!?" You yell. You feel around the door, it feels flimsy enough to be forced open. What do you? enter the PASSWORD, PAY, Or BREAK the door? 
