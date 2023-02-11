@@ -1,3 +1,5 @@
+a00 = 'Game will now end. Wrong input'
+
 a1 = '''The cold wakes you up, slowly you open your eyes. You pull out your phone, enter the 
 password "open sesame". As soon as you do, your phone dies. Realizing you are all alone in the dark, do you SCREAM for 
 help or CRAWL around the cave. '''
@@ -30,7 +32,28 @@ you unlock your phone you realise that the password was open sesame.'''
 a11 = '''The Door accepts your password, and teleports you to your final test, there are
 two door, one to your LEFT the other to your Right. Which was do you go? '''
 
-a12 = ''
+a12 = '\nHow much silver do  have you mortal? You search through your pockets'
+
+a13 = '\nJust kidding you have failed no more attempts left! The door ends your dream and you wake up .'
+
+a14 = 'Enter the amount you want to pay. Pay with SILVER or Nothing '
+
+a15 = 'the door accecpts your payment, unfortunately the birds outside wake up before you see the ending'
+
+a16 = 'You empty out your pockets, you find 10 sliver coins. You pay the door and it opens up as you wake up, questioning reality itself'
+
+a17 = 'the door disappears, you sit in darkness, contepting the finiteness of life, But your alarm saves you '
+
+a18 = 'you struggle agaisnt the door, Your strength impresses the Door. It asks you stop before it lets you through, Do you STOP or Not'
+
+a19 = 'The door calls you a worthy mortal, and it lets you through. You sleep blissfully till your alarm goes off'
+
+a20 = 'The harder you push against door the studier it comes. With all in effort, you were slowly slidding across the bed, till eventually you are woken up by the fall'
+
+a21 = 'Light fills the room. You can clearly see a door markerd "Exit". "it cant be that easy" you say to yourself. But yes it is that easy. Exiting wakes you up'
+
+a22 = 'You find a button that says, "Push to exit" and thats what you do. And you wake up disappointed.'
+
 
 first_opt = input(a1)
 
@@ -49,9 +72,26 @@ if first_opt.lower() == 'scream':
         elif first_opt_br_one_one.lower() == 'return':
             print(a5)
 
+        else:
+            print(' ')
+            print(a00)
+
     #search chosen br - lvl one - second option
     elif first_opt_br_one.lower() == 'search':
         first_opt_br_one_two = input(a6)
+        if first_opt_br_one_two.lower() == 'turn on':
+            print(' ')
+            print(a21)
+        elif first_opt_br_one_two.lower() == 'more':
+            print(' ')
+            print(a22)
+        else:
+            print(' ')
+            print(a00)
+
+    else:
+        print(' ')
+        print(a00)
 
 #crawl chosen main br
 elif first_opt.lower() == 'crawl':
@@ -64,23 +104,17 @@ elif first_opt.lower() == 'crawl':
         #enter password
         count = 0
         while first_opt_br_two_one.lower() != 'open sesame':
-
-            
             count += 1
             print(f'"You have {5 - count} atempts left! ')
             print(' ')
             password = input(a9)
 
-            # if password.lower() == 'mercy':
-            #     print(' ')
-            #     print(a10) 
-            #     break     
-
+            #password will only work once countdown has started, to try and trick the user
             if count == 4:
                 print('this is your last attempt!! ')
 
             elif count == 5:  
-                print('Just kidding you have failed no more attempts left!. ')
+                print( a13)
                 break
         
             #for some reason it would over look the mercy option unless i did it this way.
@@ -92,17 +126,43 @@ elif first_opt.lower() == 'crawl':
             elif password.lower() == 'open sesame':
                 print(' ')
                 last_in = input(a11)
+                print(' ')
+                print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
+your body is used to waking up a few minutes before your alarm rings \n''')
                 break
-                print(f'''You walk towards the door on your {last_in.lower()}, knowing its your last test. all this 
-can be over. Unfortunely the sound of honking cars wakes you up and its time to get ready for school.''')
+
 
     #Pay chosen br 2 lvl 1 two
-    if first_opt_br_two.lower() == 'pay':
-        first_opt_br_two_two = input
+    elif first_opt_br_two.lower() == 'pay':
+        print(' ')
+        first_opt_br_two_two = input(a14)
+        if first_opt_br_two_two.lower() == 'silver':
+            print(' ')
+            print(a16)
+        elif first_opt_br_two_two.lower() == 'nothing':
+            print(' ')
+            print(a17)
+        else:
+            print(' ')
+            print(a00)
+    elif first_opt_br_two.lower() == 'break':
+        too_sleepy_to_think_of_a_variable_name = (a18)
 
+        if too_sleepy_to_think_of_a_variable_name.lower() == 'stop':
+            print(' ')
+            print(a19)
+        elif too_sleepy_to_think_of_a_variable_name.lower() == 'not':
+            print(' ')
+            print(a20)
+        else:
+            print(' ')
+            print(a00)
+    else:
+        print(' ')
+        print(a00)
 
-# else:
-#     print('wrong choice game will now end. ')
+else:
+    print(a00)
 
 
 
