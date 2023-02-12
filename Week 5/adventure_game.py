@@ -1,24 +1,25 @@
 a00 = 'Game will now end. Wrong input!'
 
-a1 = '''The cold wakes you up, slowly you open your eyes. You pull out your phone, enter the 
+a1 = '''The cold wakes you up, and slowly you open your eyes. You pull out your phone, and enter the 
 password "open sesame". As soon as you do, your phone dies. Realizing you are all alone in the dark, do you SCREAM for 
-help or CRAWL around the cave. '''
+help or CRAWL around the cave?
+'''
 
-a2 = '''\nYou scream as loud as you can, A familiar voices calls back to you. Relief sweeps
- over you, knowing you can FOLLOW the voice, but maybe SEARCH fo supplies first? '''
+a2 = '''\nYou scream as loud as you can, A familiar voice calls back to you. Relief sweeps
+ over you, knowing you can FOLLOW the voice, but maybe SEARCH for supplies first? '''
 
 a3 = '''\nYou follow the voice, the cave seems to narrow, still in the dark. 
 CONTINUE on this narrowing path or RETURN where you were? '''
 
-a4  = '''\nthe cave suddedly widdens, light blinding your eyes. You have been found and rescured, 
-the joy wakes you up from your dream '''
+a4  = '''\nThe cave suddenly widens, light blinding your eyes. You have been found and rescued, 
+the joy wakes you up from your dream. '''
 
 a5 = '\nAs you turn around, you feel the ground under you give way. The hypnic jerk immediately wakes you up'
 
-a6 = '''\nYou feel around in the dark, there is flashlight right next you. Do you TURN ON
- the flash light or search for MORE? '''
+a6 = '''\nYou feel around in the dark, there is a flashlight right next to you. Do you TURN ON
+ the flashlight or search for MORE? '''
 
-a7 = '''\nLuckly you find a door. Some how the door speaks. Says "Silver is the only passage, 
+a7 = '''\nLuckily you find a door. Somehow the door speaks. Says "Silver is the only passage, 
 you know the ancient password". "What password!?" You yell. You feel around the door, it feels flimsy enough to be 
 forced open. What do you do? enter the PASSWORD, PAY, Or BREAK the door? '''
 
@@ -26,38 +27,38 @@ a8 = '"What is the password!" the door roars. '
 
 a9 = '"What is the password of the ancients, beg for MERCY if you do not know!" '
 
-a10 = '''"I offer no mercy to mortals!" the door screams. Your alarm rings, you wake up and as 
-you unlock your phone you realise that the password was open sesame.'''
+a10 = '''"I offer no mercy to mortals!" the door screams. Your alarm rings, you wake up, and as 
+you unlock your phone you realize that the password was “open sesame”.'''
 
-a11 = '''The Door accepts your password, and teleports you to your final test, there are
-two door, one to your LEFT the other to your Right. Which was do you go? '''
+a11 = '''The Door accepts your password and teleports you to your final test, there are
+two doors, one to your LEFT and the other to your Right. Which way do you go? '''
 
 a12 = '\nHow much silver do  have you mortal? You search through your pockets'
 
-a13 = '\nJust kidding you have failed no more attempts left! The door ends your dream and you wake up .'
+a13 = '\n"Just kidding" you have failed no more attempts left! The door ends your dream and you wake up .'
 
-a14 = 'Enter the amount you want to pay. Pay with SILVER or Nothing '
+a14 = '"Give me silver now" yells the door!. Pay with SILVER or Nothing? '
 
-a15 = '''the door accecpts your payment, unfortunately the birds outside wake up before you
+a15 = '''The door accepts your payment, unfortunately, the birds outside wake up before you
  see the ending'''
 
-a16 = '''You empty out your pockets, you find 10 sliver coins. You pay the door and it opens up as 
-you wake up, questioning reality itself'''
+a16 = '''You empty out your pockets, you find 10 silver coins. You pay the door and it opens up as 
+you wake up, questioning reality itself.'''
 
-a17 = 'the door disappears, you sit in darkness, contepting the finiteness of life, But your alarm saves you '
+a17 = 'The door disappears, and you sit in darkness, contemplating the finiteness of life, But your alarm saves you. '
 
-a18 = '''you struggle against the door, Your strength impresses the Door. It asks you stop before it lets you 
-through, Do you STOP or NOT'''
+a18 = '''You struggle against the door, Your strength impresses the Door. It asks you to stop before it lets you 
+Through. Do you STOP or NOT? '''
 
-a19 = 'The door calls you a worthy mortal, and it lets you through. You sleep blissfully till your alarm goes off'
+a19 = 'The door calls you a worthy mortal, and it lets you through. You sleep blissfully till your alarm goes off. '
 
-a20 = '''The harder you push against door the studier it becomes. With all that effort, you were slowly slidding across
- the bed, till eventually you are woken up by the fall'''
+a20 = '''The harder you push against the door the studier it becomes. With all that effort, you were slowly sliding across
+ the bed, till eventually you are woken up by the fall. '''
 
 a21 = '''Light fills the room. You can clearly see a door markerd "Exit". "it cant be that easy" you say to yourself. 
-But yes it is that easy. Exiting wakes you up'''
+But yes it is that easy. Exiting wakes you up. '''
 
-a22 = 'You find a button that says, "Push to exit" and thats what you do. And you wake up disappointed.'
+a22 = 'You find a button that says, "Push to exit" and that’s what you do. And you wake up disappointed.'
 
 
 first_opt = input(a1)
@@ -65,7 +66,7 @@ first_opt = input(a1)
 #scream choosen main br
 if first_opt.lower() == 'scream':
     first_opt_br_one = input(a2)
-    
+
     #follow chosen br lvl one
     if first_opt_br_one.lower() == 'follow':
         first_opt_br_one_one = input(a3)
