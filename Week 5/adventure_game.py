@@ -65,6 +65,7 @@ first_opt = input(a1)
 #scream choosen main br
 if first_opt.lower() == 'scream':
     first_opt_br_one = input(a2)
+    
     #follow chosen br lvl one
     if first_opt_br_one.lower() == 'follow':
         first_opt_br_one_one = input(a3)
@@ -84,12 +85,15 @@ if first_opt.lower() == 'scream':
     #search chosen br - lvl one - second option
     elif first_opt_br_one.lower() == 'search':
         first_opt_br_one_two = input(a6)
+
         if first_opt_br_one_two.lower() == 'turn on':
             print(' ')
             print(a21)
+
         elif first_opt_br_one_two.lower() == 'more':
             print(' ')
             print(a22)
+
         else:
             print(' ')
             print(a00)
@@ -134,6 +138,7 @@ elif first_opt.lower() == 'crawl':
                 print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
 your body is used to waking up a few minutes before your alarm rings \n''')
                 break
+
         if first_opt_br_two_one.lower() == 'open sesame':
             print(' ')
             last_in = input(a11)
@@ -143,9 +148,6 @@ your body is used to waking up a few minutes before your alarm rings \n''')
         # else:
         #     print(' ')
         #     print(a00)
-
-
-
 
     #Pay chosen br 2 lvl 1 two
     elif first_opt_br_two.lower() == 'pay':
@@ -174,7 +176,7 @@ your body is used to waking up a few minutes before your alarm rings \n''')
         elif too_sleepy_to_think_of_a_variable_name.lower() == 'not':
             print(' ')
             print(a20)
-            
+
         else:
             print(' ')
             print(a00)
