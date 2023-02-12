@@ -148,10 +148,13 @@ elif first_opt.lower() == 'crawl':
             elif password.lower() == 'open sesame':
                 print(' ')
                 last_in = input(a11)
+
+                #this two leads to the same outcome, I am already at the 3 required levels.
                 if last_in.lower() == 'left' or last_in.lower() == 'right':
                     print(' ')
                     print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
 your body is used to waking up a few minutes before your alarm rings \n''')
+
                 else:
                     print(' ')
                     print(a00)
@@ -160,6 +163,7 @@ your body is used to waking up a few minutes before your alarm rings \n''')
         if first_opt_br_two_one.lower() == 'open sesame':
             print(' ')
             last_in = input(a11)
+
             if last_in.lower() == 'left' or last_in.lower() == 'right':
                 print(' ')
                 print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
