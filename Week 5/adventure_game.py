@@ -2,24 +2,23 @@ a00 = 'Game will now end. Wrong input!'
 
 a1 = '''The cold wakes you up, and slowly you open your eyes. You pull out your phone, and enter the 
 password "open sesame". As soon as you do, your phone dies. Realizing you are all alone in the dark, do you SCREAM for 
-help or CRAWL around the cave?
-'''
+help or CRAWL around the cave? '''
 
-a2 = '''\nYou scream as loud as you can, A familiar voice calls back to you. Relief sweeps
+a2 = '''You scream as loud as you can, A familiar voice calls back to you. Relief sweeps
  over you, knowing you can FOLLOW the voice, but maybe SEARCH for supplies first? '''
 
-a3 = '''\nYou follow the voice, the cave seems to narrow, still in the dark. 
+a3 = '''You follow the voice, the cave seems to narrow, still in the dark. 
 CONTINUE on this narrowing path or RETURN where you were? '''
 
-a4  = '''\nThe cave suddenly widens, light blinding your eyes. You have been found and rescued, 
+a4  = '''The cave suddenly widens, light blinding your eyes. You have been found and rescued, 
 the joy wakes you up from your dream. '''
 
-a5 = '\nAs you turn around, you feel the ground under you give way. The hypnic jerk immediately wakes you up'
+a5 = 'As you turn around, you feel the ground under you give way. The hypnic jerk immediately wakes you up'
 
-a6 = '''\nYou feel around in the dark, there is a flashlight right next to you. Do you TURN ON
+a6 = '''You feel around in the dark, there is a flashlight right next to you. Do you TURN ON
  the flashlight or search for MORE? '''
 
-a7 = '''\nLuckily you find a door. Somehow the door speaks. Says "Silver is the only passage, 
+a7 = '''Luckily you find a door. Somehow the door speaks. Says "Silver is the only passage, 
 you know the ancient password". "What password!?" You yell. You feel around the door, it feels flimsy enough to be 
 forced open. What do you do? enter the PASSWORD, PAY, Or BREAK the door? '''
 
@@ -33,9 +32,9 @@ you unlock your phone you realize that the password was “open sesame”.'''
 a11 = '''The Door accepts your password and teleports you to your final test, there are
 two doors, one to your LEFT and the other to your Right. Which way do you go? '''
 
-a12 = '\nHow much silver do  have you mortal? You search through your pockets'
+a12 = 'How much silver do  have you mortal? You search through your pockets'
 
-a13 = '\n"Just kidding" you have failed no more attempts left! The door ends your dream and you wake up .'
+a13 = '"Just kidding" you have failed no more attempts left! The door ends your dream and you wake up .'
 
 a14 = '"Give me silver now" yells the door!. Pay with SILVER or Nothing? '
 
@@ -60,23 +59,29 @@ But yes it is that easy. Exiting wakes you up. '''
 
 a22 = 'You find a button that says, "Push to exit" and that’s what you do. And you wake up disappointed.'
 
+a23 = 'This is your last attempt!! '
+
 
 first_opt = input(a1)
 
 #scream choosen main br
 if first_opt.lower() == 'scream':
+    print(' ')
     first_opt_br_one = input(a2)
 
     #follow chosen br lvl one
     if first_opt_br_one.lower() == 'follow':
+        print(' ')
         first_opt_br_one_one = input(a3)
 
         #continue chosen br lvl one - one
         if first_opt_br_one_one.lower() == 'continue':
+            print(' ')
             print(a4)
          
          #Return chosen br lvl one - two 
         elif first_opt_br_one_one.lower() == 'return':
+            print(' ')
             print(a5)
 
         else:
@@ -85,6 +90,7 @@ if first_opt.lower() == 'scream':
 
     #search chosen br - lvl one - second option
     elif first_opt_br_one.lower() == 'search':
+        print(' ')
         first_opt_br_one_two = input(a6)
 
         if first_opt_br_one_two.lower() == 'turn on':
@@ -105,10 +111,12 @@ if first_opt.lower() == 'scream':
 
 #crawl chosen main br
 elif first_opt.lower() == 'crawl':
+    print(' ')
     first_opt_br_two = input(a7)
     
     #password chosen
     if first_opt_br_two.lower() == 'password':
+        print(' ')
         first_opt_br_two_one = input(a8)
         
         #enter password
@@ -120,9 +128,11 @@ elif first_opt.lower() == 'crawl':
             password = input(a9)
 
             if count == 4:
-                print('this is your last attempt!! ')
+                print(' ')
+                print(a23)
 
             elif count == 5:  
+                print(' ')
                 print( a13)
                 break
         
@@ -135,20 +145,25 @@ elif first_opt.lower() == 'crawl':
             elif password.lower() == 'open sesame':
                 print(' ')
                 last_in = input(a11)
-                print(' ')
-                print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
+                if last_in.lower() == 'left' or last_in.lower() == 'right':
+                    print(' ')
+                    print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
 your body is used to waking up a few minutes before your alarm rings \n''')
+                else:
+                    print(' ')
+                    print(a00)
                 break
 
         if first_opt_br_two_one.lower() == 'open sesame':
             print(' ')
             last_in = input(a11)
-            print(' ')
-            print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
+            if last_in.lower() == 'left' or last_in.lower() == 'right':
+                print(' ')
+                print(f'''As you head towards the door on your {last_in.lower()}, you wake up because
 your body is used to waking up a few minutes before your alarm rings \n''')
-        # else:
-        #     print(' ')
-        #     print(a00)
+            else:
+                print(' ')
+                print(a00)
 
     #Pay chosen br 2 lvl 1 two
     elif first_opt_br_two.lower() == 'pay':
