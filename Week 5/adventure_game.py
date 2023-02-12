@@ -4,8 +4,8 @@ a1 = '''The cold wakes you up, and slowly you open your eyes. You pull out your 
 password "open sesame". As soon as you do, your phone dies. Realizing you are all alone in the dark, do you SCREAM for 
 help or CRAWL around the cave? '''
 
-a2 = '''You scream as loud as you can, A familiar voice calls back to you. Relief sweeps
- over you, knowing you can FOLLOW the voice, but maybe SEARCH for supplies first? '''
+a2 = '''You scream as loud as you can, A familiar voice calls back to you. Relief sweeps 
+over you, knowing you can FOLLOW the voice, but maybe SEARCH for supplies first? '''
 
 a3 = '''You follow the voice, the cave seems to narrow, still in the dark. 
 CONTINUE on this narrowing path or RETURN where you were? '''
@@ -15,8 +15,8 @@ the joy wakes you up from your dream. '''
 
 a5 = 'As you turn around, you feel the ground under you give way. The hypnic jerk immediately wakes you up'
 
-a6 = '''You feel around in the dark, there is a flashlight right next to you. Do you TURN ON
- the flashlight or search for MORE? '''
+a6 = '''You feel around in the dark, there is a flashlight right next to you. Do you TURN ON 
+the flashlight or search for MORE? '''
 
 a7 = '''Luckily you find a door. Somehow the door speaks. Says "Silver is the only passage, 
 you know the ancient password". "What password!?" You yell. You feel around the door, it feels flimsy enough to be 
@@ -51,8 +51,8 @@ Through. Do you STOP or NOT? '''
 
 a19 = 'The door calls you a worthy mortal, and it lets you through. You sleep blissfully till your alarm goes off. '
 
-a20 = '''The harder you push against the door the studier it becomes. With all that effort, you were slowly sliding across
- the bed, till eventually you are woken up by the fall. '''
+a20 = '''The harder you push against the door the studier it becomes. With all that effort, you were slowly sliding across 
+the bed, till eventually you are woken up by the fall. '''
 
 a21 = '''Light fills the room. You can clearly see a door markerd "Exit". "it cant be that easy" you say to yourself. 
 But yes it is that easy. Exiting wakes you up. '''
