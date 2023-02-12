@@ -30,21 +30,21 @@ a10 = '''"I offer no mercy to mortals!" the door screams. Your alarm rings, you 
 you unlock your phone you realize that the password was “open sesame”.'''
 
 a11 = '''The Door accepts your password and teleports you to your final test, there are
-two doors, one to your LEFT and the other to your Right. Which way do you go? '''
+two doors, one to your LEFT and the other to your RIGHT. Which way do you go? '''
 
 a12 = 'How much silver do  have you mortal? You search through your pockets'
 
-a13 = '"Just kidding" you have failed no more attempts left! The door ends your dream and you wake up .'
+a13 = '"Just kidding" smirks the door. "You have failed no more attempts left!" The door ends your dream and you wake up.'
 
-a14 = '"Give me silver now" yells the door!. Pay with SILVER or Nothing? '
+a14 = '"Give me silver now" yells the door!. Pay with SILVER or NOTHING? '
 
 a15 = '''The door accepts your payment, unfortunately, the birds outside wake up before you
  see the ending'''
 
 a16 = '''You empty out your pockets, you find 10 silver coins. You pay the door and it opens up as 
-you wake up, questioning reality itself.'''
+you wake up, leaving you questioning reality itself.'''
 
-a17 = 'The door disappears, and you sit in darkness, contemplating the finiteness of life, But your alarm saves you. '
+a17 = 'The door disappears, and you sit in darkness, contemplating the finiteness of life, but your alarm saves you. '
 
 a18 = '''You struggle against the door, Your strength impresses the Door. It asks you to stop before it lets you 
 Through. Do you STOP or NOT? '''
@@ -121,15 +121,18 @@ elif first_opt.lower() == 'crawl':
         
         #enter password
         count = 0
+
         while first_opt_br_two_one.lower() != 'open sesame':
             count += 1
-            print(f'"You have {5 - count} atempts left! ')
+            print(f'"You have {6 - count} atempts left! ')
             print(' ')
+
             password = input(a9)
 
             if count == 4:
                 print(' ')
                 print(a23)
+                print(' ')
 
             elif count == 5:  
                 print(' ')
@@ -183,7 +186,8 @@ your body is used to waking up a few minutes before your alarm rings \n''')
             print(a00)
 
     elif first_opt_br_two.lower() == 'break':
-        too_sleepy_to_think_of_a_variable_name = (a18)
+        print(' ')
+        too_sleepy_to_think_of_a_variable_name = input(a18)
 
         if too_sleepy_to_think_of_a_variable_name.lower() == 'stop':
             print(' ')
